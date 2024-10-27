@@ -20,3 +20,8 @@ typewriter.typeString('Bringing ideas to life through Front-End development')
     .start();
 
 
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+    

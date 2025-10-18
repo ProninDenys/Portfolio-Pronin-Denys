@@ -86,6 +86,23 @@
   box-sizing: border-box;
 }
 
+/* Social icons — size & hover */
+.social-icon {
+  line-height: 1;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+/* Небольшой подъём и масштаб при ховере */
+.social-icon:hover {
+  transform: translateY(-2px) scale(1.08);
+  opacity: .9;
+}
+
+/* На очень узких экранах иконки всё ещё крупные */
+@media (max-width: 576px) {
+  .social-icon { font-size: 2rem !important; }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;

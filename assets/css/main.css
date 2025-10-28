@@ -2189,7 +2189,7 @@ section,
 
 .contact .contact-form .form-control,
 .contact .contact-form .form-select {
-  padding: 0.875rem 1.25rem;
+  padding: 2.875rem 1.25rem;
   border-color: color-mix(in srgb, var(--default-color), transparent 90%);
   border-radius: 0.5rem;
   background-color: color-mix(in srgb, var(--surface-color) 90%, white 5%);

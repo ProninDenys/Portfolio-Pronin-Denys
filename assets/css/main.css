@@ -1389,11 +1389,11 @@ section,
 }
 
 .resume .resume-side .profile-img img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border: 5px solid color-mix(in srgb, var(--accent-color), transparent 85%);
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .resume .resume-side h3 {

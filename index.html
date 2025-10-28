@@ -2,168 +2,753 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-        content="Denys Pronin — Web Developer (React/TypeScript, Python). Founder of PlainLegal.net (1,000 paying users in 150 days). Chrome extensions: Page Whiteout, TimeLimiter, FocusWatch. 12+ years legal background." />
-  <meta name="author" content="Denys Pronin" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Denys Pronin — Web Developer (React/TypeScript, Python)</title>
+  <meta name="description" content="Denys Pronin — Web Developer (React/TypeScript, Python). Founder of PlainLegal.net (1,000 paying users in 150 days). Chrome extensions: Page Whiteout, TimeLimiter, FocusWatch.">
+  <meta name="keywords" content="Denys Pronin, Web Developer, React, TypeScript, Python, Django, Portfolio">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="img/fav/free-icon-search-1055685.png" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Icons + Core theme CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- AOS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100">
-  <main class="flex-shrink-0">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-      <div class="container px-5">
-        <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">DENYS PRONIN</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="resume.html">Resume/Certifications</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
+<body class="index-page">
+
+  <!-- ======= Sidebar Header / Nav ======= -->
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#skills"><i class="bi bi-stars navicon"></i> Skills</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://github.com/ProninDenys" target="_blank" rel="noopener" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/denys-pronin" target="_blank" rel="noopener" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main class="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero section">
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Denys <span class="accent-text">Pronin</span></h1>
+                <h2>Web Developer (React/TypeScript, Python)</h2>
+                <p class="lead">
+                  I'm a
+                  <span class="typed"
+                        data-typed-items="Frontend (React/TypeScript), Python/Django APIs, Stripe billing, Chrome extensions"></span>
+                </p>
+                <p class="description">
+                  Founder of <strong>PlainLegal.net</strong> — reached
+                  <strong>1,000 paying users in 150 days</strong>. I ship React/TypeScript frontends,
+                  Python/Django backends, Stripe billing, and simple, documented processes.
+                  Chrome extensions: <em>Page Whiteout</em>, <em>TimeLimiter</em>, <em>FocusWatch</em>.
+                </p>
+
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View Projects</a>
+                  <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+
+                <div class="social-links mt-3">
+                  <a href="https://github.com/ProninDenys" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                  <a href="https://linkedin.com/in/denys-pronin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <!-- put your photo here -->
+                  <img src="assets/img/profile/denys.jpg" alt="Denys Pronin" class="profile-image">
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </nav>
+    </section>
+    <!-- End Hero -->
 
-    <!-- Header / Hero -->
-    <header class="py-5">
-      <div class="container px-5 pb-5">
-        <div class="row gx-5 align-items-center">
-          <div class="col-xxl-5">
-            <div class="text-center text-xxl-start">
-              <div class="badge bg-gradient-primary-to-secondary text-white mb-4" data-aos="fade-in">
-                <div class="text-uppercase">&middot; Web Developer (React/TypeScript, Python) &middot;</div>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <!-- Profile card -->
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="assets/img/profile/profile-square-3.webp" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
               </div>
 
-              <h1 class="display-3 fw-bolder mb-4" data-aos="fade-in" data-aos-delay="50">
-                <span class="text-gradient d-inline">I build clean UIs and reliable backends.</span>
-              </h1>
+              <div class="profile-content">
+                <h3>Denys Pronin</h3>
+                <p class="profession">Web Developer — React/TypeScript, Python</p>
 
-              <p class="lead text-muted mb-4" data-aos="fade-in" data-aos-delay="120">
-                Founder of <strong>PlainLegal.net</strong> — reached <strong>1,000 paying users in 150 days</strong>.
-                I ship React/TypeScript frontends, Python/Django backends, Stripe billing, and simple, documented
-                processes. I also build practical Chrome extensions: <em>Page Whiteout</em>, <em>TimeLimiter</em>, and <em>FocusWatch</em>.
-              </p>
-
-              <!-- Social links (moved to header) -->
-<div class="d-flex gap-4 justify-content-sm-center justify-content-xxl-start mt-2" data-aos="fade-in" data-aos-delay="220">
-  <a class="text-gradient social-icon fs-1" href="https://linkedin.com/in/denys-pronin" target="_blank" aria-label="LinkedIn" rel="noopener">
-    <i class="bi bi-linkedin"></i>
-  </a>
-  <a class="text-gradient social-icon fs-1" href="https://github.com/ProninDenys" target="_blank" aria-label="GitHub" rel="noopener">
-    <i class="bi bi-github"></i>
-  </a>
-</div>
-             
+                <div class="contact-links">
+                  <a href="mailto:denys.pronin.dev@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i> denys.pronin.dev@gmail.com
+                  </a>
+                  <a href="#" class="contact-item">
+                    <i class="bi bi-geo-alt"></i> Dundalk, Ireland
+                  </a>
+                  <a href="https://linkedin.com/in/denys-pronin" target="_blank" class="contact-item">
+                    <i class="bi bi-linkedin"></i> linkedin.com/in/denys-pronin
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-xxl-7">
-            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-              <div class="profile bg-gradient-primary-to-secondary" data-aos="zoom-in">
-                <img class="profile-img" src="img/2.jpg" alt="Portrait of Denys Pronin" />
+          <!-- Text -->
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">About Me</span>
+                <h2>Focused on shipping small products that work</h2>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
 
-    <!-- About -->
-    <section class="bg-light py-5">
-      <div class="container px-5">
-        <div class="row gx-5 justify-content-center">
-          <div class="col-xxl-8">
-            <div class="text-center my-5">
-              <h2 class="display-5 fw-bolder" data-aos="fade-up">
-                <span class="text-gradient d-inline">About Me</span>
-              </h2>
+              <div class="description">
+                <p>
+                  I’m Denys Pronin, a web developer focused on shipping small products that work.
+                  Frontend-first with React/TypeScript, solid Python/Django on the backend, and a habit of
+                  keeping docs and processes tidy. Earlier I spent 12+ years as a Judicial Assistant in Ukraine —
+                  that background taught me precise writing, strict process, and confidentiality.
+                </p>
+              </div>
 
-              <p class="lead fw-light mb-4" data-aos="fade-up" data-aos-delay="80">
-                I’m Denys Pronin, a web developer focused on shipping small products that work.
-                Frontend-first with React/TypeScript, solid Python/Django on the backend, and a habit of keeping
-                docs and processes tidy. Earlier I spent 12+ years as a Judicial Assistant in Ukraine — that background
-                taught me precise writing, strict process, and confidentiality.
-              </p>
-
-              <div class="row text-start g-4 mt-2" data-aos="fade-up" data-aos-delay="140">
-                <div class="col-md-6">
-                  <div class="p-3 bg-white rounded-4 h-100 shadow-sm">
-                    <h5 class="mb-2">What I ship</h5>
-                    <ul class="mb-0">
-                      <li>React/TypeScript interfaces (forms, state, routing)</li>
-                      <li>Python/Django APIs (auth/roles, REST/JSON)</li>
-                      <li>Stripe subscriptions and webhooks</li>
-                      <li>PostgreSQL with ORM & migrations</li>
-                      <li>CI/CD with GitHub Actions → Vercel</li>
-                    </ul>
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">What I ship</span>
+                    <span class="detail-value">React/TypeScript UIs; Django APIs; Stripe; PostgreSQL; CI/CD</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Highlights</span>
+                    <span class="detail-value">PlainLegal: 1,000 paying users; +25% perf; security headers; Chrome extensions</span>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="p-3 bg-white rounded-4 h-100 shadow-sm">
-                    <h5 class="mb-2">Recent highlights</h5>
-                    <ul class="mb-0">
-                      <li>PlainLegal.net → 1,000 paying users in 150 days</li>
-                      <li>~25% faster loads via DB indexing & bundling</li>
-                      <li>Security headers (CSP/HSTS), privacy-by-design basics</li>
-                      <li>Chrome extensions: Page Whiteout, TimeLimiter, FocusWatch</li>
-                      <li>Clear docs: knowledge base, release notes, simple SOPs</li>
-                    </ul>
-                  </div>
-                </div>
+              </div>
+
+              <div class="cta-section">
+                <a href="#portfolio" class="btn btn-primary">
+                  <i class="bi bi-rocket"></i> See Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i> Let's Talk
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- End About -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>React/TS frontends · Python/Django APIs · Stripe · PostgreSQL · CI/CD</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Frontend</h3>
+              <div class="skills-animation">
+                <div class="skill-item"><div class="d-flex justify-content-between"><h4>React / TypeScript</h4><span class="skill-percentage">Advanced</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90"></div></div></div>
+                <div class="skill-item"><div class="d-flex justify-content-between"><h4>HTML5 / CSS / Sass</h4><span class="skill-percentage">Advanced</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90"></div></div></div>
+                <div class="skill-item"><div class="d-flex justify-content-between"><h4>Accessibility & Forms</h4><span class="skill-percentage">Advanced</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85"></div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="250">
+              <h3>Backend & Ops</h3>
+              <div class="skills-animation">
+                <div class="skill-item"><div class="d-flex justify-content-between"><h4>Python (Django/Flask)</h4><span class="skill-percentage">Advanced</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85"></div></div></div>
+                <div class="skill-item"><div class="d-flex justify-content-between"><h4>PostgreSQL / ORM</h4><span class="skill-percentage">Advanced</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80"></div></div></div>
+                <div class="skill-item"><div class="d-flex justify-content-between"><h4>Stripe / Webhooks</h4><span class="skill-percentage">Advanced</span></div><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80"></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Selected experience & education.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <!-- Left column -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="assets/img/profile/profile-square-2.webp" alt="Profile" class="img-fluid rounded">
+              </div>
+
+              <h3>Professional Summary</h3>
+              <p>Web developer shipping React/TypeScript frontends and Python/Django backends with Stripe billing and clean ops. 12+ years as Judicial Assistant → precise writing, process discipline, confidentiality.</p>
+
+              <h3 class="mt-4">Contact</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Dundalk, Ireland</li>
+                <li><i class="bi bi-envelope"></i> denys.pronin.dev@gmail.com</li>
+                <li><i class="bi bi-linkedin"></i> linkedin.com/in/denys-pronin</li>
+                <li><i class="bi bi-github"></i> github.com/ProninDenys</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+            <!-- Experience -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
+
+              <div class="resume-item">
+                <h4>Independent Web Developer (Sole Trader)</h4>
+                <h5>Nov 2024 – Present — Dundalk, IE</h5>
+                <ul>
+                  <li>Build & operate <strong>PlainLegal.net</strong> (React/TS + Django, PostgreSQL, Stripe, CI/CD).</li>
+                  <li>Ship MV3 Chrome extensions — <strong>Page Whiteout</strong>, <strong>TimeLimiter</strong>, <strong>FocusWatch</strong>.</li>
+                  <li>~25% faster loads via DB indexing, API batching, bundle slimming; CSP/HSTS.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Multihog Ltd — Assembly Specialist</h4>
+                <h5>Jan 2023 – Present — Dundalk, IE</h5>
+                <ul>
+                  <li>Interpret technical drawings & SOPs; precise mechanical assembly in a safety-critical environment.</li>
+                  <li>Track production metrics and maintain QA checklists with high accuracy.</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Judicial Assistant (Ukraine)</h4>
+                <h5>2010 – 2022</h5>
+                <ul>
+                  <li>Court decisions & procedural rulings; ECHR/EU law research; hearings & documentation standards.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+              <div class="resume-item">
+                <h4>University of Michigan — Python Programming</h4>
+                <h5>Aug 2024 – Dec 2024</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Beetroot Academy — Front-End Developer</h4>
+                <h5>May 2024 – Oct 2024</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Cisco Networking Academy — Introduction to Cybersecurity</h4>
+                <h5>Mar 2024</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Law Degrees (Ukraine)</h4>
+                <h5>2008 – 2014</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Resume -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Selected projects (SaaS, extensions, web apps, tools).</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <!-- Filters -->
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-saas">SaaS</li>
+                  <li data-filter=".filter-extension">Extensions</li>
+                  <li data-filter=".filter-web">Web</li>
+                  <li data-filter=".filter-game">Games</li>
+                  <li data-filter=".filter-tool">Tools</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Items -->
+            <div class="col-lg-9">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <!-- PlainLegal (SaaS) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-saas">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/plainlegal.png" class="img-fluid" alt="PlainLegal" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">SaaS — Next.js/TS + Django</span>
+                        <h4>PlainLegal.net</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/plainlegal.png" class="glightbox" title="PlainLegal.net"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://www.plainlegal.net/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FocusWatch (Extension) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-extension">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/focuswatch.png" class="img-fluid" alt="FocusWatch" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Chrome Extension (MV3)</span>
+                        <h4>FocusWatch — Clean YouTube</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/focuswatch.png" class="glightbox" title="FocusWatch"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener" title="Store"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AltitudeNow (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/altitudenow.png" class="img-fluid" alt="AltitudeNow" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web App</span>
+                        <h4>AltitudeNow</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/altitudenow.png" class="glightbox" title="AltitudeNow"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/AltitudeNow/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Snake (Game) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-game">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/snake.png" class="img-fluid" alt="Snake Game" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Game</span>
+                        <h4>Snake Game</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/snake.png" class="glightbox" title="Snake Game"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/Retro-Game-Snake/" target="_blank" rel="noopener" title="Play"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- LinkedIn Job Finder (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/linkedin-finder.png" class="img-fluid" alt="LinkedIn Job Finder" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Web App — Flask</span>
+                        <h4>LinkedIn Job Finder</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/linkedin-finder.png" class="glightbox" title="LinkedIn Job Finder"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://linkedin-scraper-rigm.onrender.com" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mortgage Calculator (Web/Tool) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/mortgage.png" class="img-fluid" alt="Mortgage Calculator" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Django Tool</span>
+                        <h4>Mortgage Calculator</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/mortgage.png" class="glightbox" title="Mortgage Calculator"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mortgage-calculator-9gw8.onrender.com" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fuel Converter (Tool) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-tool">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/fuel.png" class="img-fluid" alt="Fuel Converter" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Flask Tool</span>
+                        <h4>Fuel Consumption Converter</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/fuel.png" class="glightbox" title="Fuel Converter"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://mpg-8hus.onrender.com" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Solis (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/solis.png" class="img-fluid" alt="Solis" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Concept Site</span>
+                        <h4>Solis</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/solis.png" class="glightbox" title="Solis"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/Solis/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- React Profile Form (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/profile-form.png" class="img-fluid" alt="React Profile Form" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">React App</span>
+                        <h4>React Profile Form</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/profile-form.png" class="glightbox" title="React Profile Form"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/Profile-form/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Movie Finder (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/movie-finder.png" class="img-fluid" alt="Movie Finder" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">React + TMDB</span>
+                        <h4>Movie Finder</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/movie-finder.png" class="glightbox" title="Movie Finder"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/films/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BHROMAON (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/bhromaon.png" class="img-fluid" alt="BHROMAON" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Travel Site</span>
+                        <h4>BHROMAON</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/bhromaon.png" class="glightbox" title="BHROMAON"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/BHROMAON-1-site/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Data Warehouse (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/data-warehouse.png" class="img-fluid" alt="Data Warehouse" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Landing</span>
+                        <h4>Data Warehouse</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/data-warehouse.png" class="glightbox" title="Data Warehouse"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/Data-Warehouse-2-site/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Monticello (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/monticello.png" class="img-fluid" alt="Monticello" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Website</span>
+                        <h4>Monticello</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/monticello.png" class="glightbox" title="Monticello"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://monticello-yl.netlify.app" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- React Native Docs (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/react-native-docs.png" class="img-fluid" alt="React Native Docs" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Docs Site</span>
+                        <h4>React Native Documentation</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/react-native-docs.png" class="glightbox" title="React Native Docs"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/React-Native-Documentation-5-site/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Far Cry 6 Card (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/far-cry-card.png" class="img-fluid" alt="Far Cry 6 Card" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Interactive Card</span>
+                        <h4>Far Cry 6 Game Card</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/far-cry-card.png" class="glightbox" title="Far Cry 6 Card"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/Far-Cry-6-Card-6-site/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AI Fashion Platform (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/ai-fashion.png" class="img-fluid" alt="AI Fashion Platform" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Brand / E-commerce</span>
+                        <h4>AI Fashion Platform</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/ai-fashion.png" class="glightbox" title="AI Fashion Platform"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/AI-Fashion-Platform-7-site/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Productly (Web) -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/productly.png" class="img-fluid" alt="Productly" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Website</span>
+                        <h4>Productly</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/productly.png" class="glightbox" title="Productly"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://pronindenys.github.io/Productly/" target="_blank" rel="noopener" title="Live"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- End portfolio container -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Let’s work together.</p>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <!-- Info -->
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                <div class="content">
+                  <h4>Location</h4>
+                  <p>Dundalk, Ireland</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-envelope"></i></div>
+                <div class="content">
+                  <h4>Email</h4>
+                  <p>denys.pronin.dev@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-linkedin"></i></div>
+                <div class="content">
+                  <h4>LinkedIn</h4>
+                  <p>linkedin.com/in/denys-pronin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form (Formspree) -->
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>Drop me a line — I usually reply within 1–2 days.</p>
+
+              <form action="https://formspree.io/f/xpwzqrwl" method="POST" class="php-email-form">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" rows="6" class="form-control" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
 
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-white py-4 mt-auto">
-  <div class="container px-5">
-    <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-      <div class="col-auto"><div class="small m-0">Copyright &copy; Denys Pronin 2025</div></div>
-      <div class="col-auto">
-        <a class="small" href="privacy.html">Privacy</a>
-        <span class="mx-1">&middot;</span>
-        <a class="small" href="terms.html">Terms</a>
-        <span class="mx-1">&middot;</span>
-        <a class="small" href="contact.html">Contact</a>
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Denys Pronin</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- Leave this credit in the free version -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init();</script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

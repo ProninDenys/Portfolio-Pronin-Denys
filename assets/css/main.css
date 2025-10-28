@@ -734,11 +734,13 @@ section,
 
 .hero .hero-visual .profile-container .profile-image {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
-  border-radius: 30px;
-  z-index: 2;
+  border-radius: 20px;
+  z-index: 3;
+  margin-left: 35px;
+  margin-top: 30px;
 }
 
 @keyframes float {
